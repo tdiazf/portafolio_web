@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>tdiazf | Portafolio Web</title>
+</head>
+
+<body>
+    <!-- Sección inicio (Encabezado) -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>/tdiazf/</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portafolio" onclick="seleccionar(this)">PORTAFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <div class="redes">
+                        <a href="https://www.linkedin.com/in/thomas-diaz-fuentes-75b760221" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Thomas</span> un desarrollador Web Full Stack</h2>
+                <p class="descripcion">
+                    Explora mi CV interactivo y descubre cómo mi experiencia y habilidades pueden potenciar tu equipo.
+                </p>
+                <a href="#portafolio">Ir a Portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección sobre mí -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/foto.jpg" alt="Foto del desarrollador">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, Soy <span>Thomas Diaz</span></h2>
+            <h3>Desarrollador web full stack</h3>
+            <p>
+                Tengo tres años de experiencia, especializado en PHP, PostgreSQL, HTML5, CSS, y JavaScript (con jQuery).
+                Mi enfoque se centra en la creación de sitios y aplicaciones web para empresas, destacando en
+                plataformas empresariales, especialmente en gestión de inventario, contabilidad y facturación. Mi pasión
+                por la programación se refleja en mi habilidad para resolver problemas cotidianos y mejorar la vida de
+                las personas.
+            </p>
+            <p>
+                Con habilidades para trabajar en equipo, una actitud proactiva para aprender nuevas tecnologías, y un
+                enfoque en la mejora continua, ofrezco soluciones efectivas y adaptadas a las necesidades de las
+                organizaciones. En resumen, soy un desarrollador web full stack apasionado y comprometido con la mejora
+                constante.
+            </p>
+            <a href="file/CV - Thomas Diaz Fuentes.pdf" download>Descargar CV</a>
+        </div>
+    </section>
+
+    <!-- Sección servicios -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"> <i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <p>Desarrollo web full stack con enfoque integral, especializado en la creación, mantenimiento y
+                    optimización de plataformas. Experiencia destacada en gestión de inventario, contabilidad y
+                    actividades de distribuidores móviles de Claro.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+                <h4>Programación PHP</h4>
+                <hr>
+                <p>Experiencia especializada en PHP puro, resolución de problemas, y amplio conocimiento en bases de
+                    datos SQL, con especialización en PostgreSQL</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-database"></i></span>
+                <h4>Alojamiento de Sitios</h4>
+                <hr>
+                <p>Realización de tareas de DDL y DML, uso de herramientas como Bitbucket, y despliegue de sistemas en
+                    servidores Linux (OVH) para brindar soporte técnico y alojamiento efectivo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección habilidades -->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES </h3>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Html & Css</p>
+                <span class="porcentaje">95%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="html"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Javascript</p>
+                <span class="porcentaje">90%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="js"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Bases de Datos</p>
+                <span class="porcentaje">90%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="bd"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>PHP</p>
+                <span class="porcentaje">90%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="php"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección portafolio -->
+    <section id="portafolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto1.jpg" alt="">
+                <div class="info">
+                    <h4>Servicios Fijos Panamá</h4>
+                    <p>Módulo Empresarial</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto2.jpg" alt="">
+                <div class="info">
+                    <h4>Facturación Electrónica Colombia</h4>
+                    <p>Módulo Empresarial</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto3.jpg" alt="">
+                <div class="info">
+                    <h4>Sitio web Ucompensar</h4>
+                    <p>Módulo Académico</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección contacto -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactanos ahora</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo *" class="input-mitad">
+                    <input type="email" placeholder="Dirección de Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..."
+                        class="input-full"></textarea>
+                </div>
+                <div class="btn-enviar-container">
+                    <a href="#" class="btn-enviar">Enviar</a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Sección footer (Píe de página) -->
+    <footer>
+        <p>Derechos reservados - 2023</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
